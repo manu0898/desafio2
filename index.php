@@ -7,11 +7,31 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Inicio</title>
+        
+        <!-- Course CSS -->
+        <link rel="stylesheet" href="css/micss.css" />
     </head>
     <body>
-        <?php
-        // put your code here
-        ?>
+
+        <header class="bg-dark">
+            <?php
+            include './Vistas/Encabezado.php';
+            ?>
+        </header>
+
+        <p>dgrdrhgdd</p>
+        <p>dgrdrhgdd</p>
+        <p>dgrdrhgdd</p>
+        <p>dgrdrhgdd</p>
+        <p>dgrdrhgdd</p>
+        <p>dgrdrhgdd</p>
+        
+        <footer>
+            <?php
+            include './Vistas/piePagina.php';
+            ?>
+        </footer>
+
     </body>
 </html>
