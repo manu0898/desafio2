@@ -34,7 +34,7 @@ and open the template in the editor.
                                 fixed-top -> para fijarlo arriba del todo-->
                 <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-tope">
 
-                    <a class="navbar-brand" href="#"><img src="../imagenes/logo.png"/></a>
+                    <a class="navbar-brand" href="#"><img src="../../imagenes/logo.png"/></a>
                     <!--boton para mortar cuendo el boton se haga responsive-->
 
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
@@ -46,31 +46,28 @@ and open the template in the editor.
                             <li class="nav-item active">
                                 <a href="#" class="nav-link">Inicio</a>
                             </li>
+                            <li class="nav-item active">
+                                <a href="#" class="nav-link">Noticias</a>
+                            </li>
                             <li class="nav-item dropdown">
-                                <a  class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Noticias</a>
-                                <div class="dropdown-menu dropdown-menu-left">
-                                    <a class="dropdown-item" href="#">Ultimas Noticias</a>
-                                    <a class="dropdown-item" href="#">Noticias Destacadas</a>
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Listar equipos</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Por nombre</a>
+                                    <a class="dropdown-item" href="#">Por liga</a>
+                                    <a class="dropdown-item" href="#">Por país</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Nosotros</a>
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Area equipos</a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">La empresa</a>
-                                    <a class="dropdown-item" href="#">Trabaja con nosotros</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Contacto</a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">¿Dónde estamos?</a>
-                                    <a class="dropdown-item" href="#">Servicio al cliente</a>
+                                    <a class="dropdown-item" href="#">Añadir equipo</a>
+                                    <a class="dropdown-item" href="#">Validar equipo</a>
                                 </div>
                             </li>
                         </ul>
 
-                        <form class="form-inline">
-                            <input type="submit" name="login" value="Login">
+                        <form class="form-inline" name="form" action="Controladores/controladorGeneral.php" method="POST">
+                            <input type="submit" name="login" class="btn btn-primary" value="Login">
                         </form>
                     </div>
                 </nav>
